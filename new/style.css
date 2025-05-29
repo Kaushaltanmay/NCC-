@@ -1,4 +1,4 @@
-/*
+
 0-600px:  Phone
 600-900px:  Tablet portrait
 900-1200px:  Tablet landscape
@@ -13,7 +13,7 @@ $breakpoint argument choices:
 - big-desktop
 
 ORDER:base+typography > general layout + grid > page layout > components
-*/
+
 
 @keyframes moveInBottom {
     0% {
