@@ -67,7 +67,7 @@ body {
 .loader .box:nth-child(2)::before {
   top: 50%;
   right: 50%;
-  background: #33A753;
+  background: #ffbd8b;
   -webkit-animation: lightMe2 4s ease-out infinite normal;
           animation: lightMe2 4s ease-out infinite normal;
 }
