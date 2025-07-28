@@ -1311,14 +1311,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading for Side Boxes */
-.heading__secondary {
-  font-size: 20px;
-  font-weight: bold;
-  color: #003366;
-  text-align: center;
-  margin-bottom: 10px;
-}
+
 
 /* Text Inside Boxes */
 .paragraph {
