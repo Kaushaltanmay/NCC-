@@ -1062,11 +1062,212 @@ background: linear-gradient(to right, #000000, #434343, #B22222);
   
   .section__allAbout {
     padding: 10rem 0;
-    background-color: #d1ee8e; }
+    background-color: white; }
     @media (max-width: 37.5em) {
       .section__allAbout {
         padding: 1rem; } }
-  
+
+        /* 🌟 GENERAL STYLING */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f2f4f8; /* Light neutral backdrop */
+  margin: 0;
+  color: #222;
+}
+
+/* Section Container */
+.section__allAbout {
+  padding: 60px 5%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(240,245,244,0.9));
+}
+
+/* 🌟 MAIN HEADINGS */
+.main__Heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #B22222; /* NCC Red */
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  border-left: 6px solid #1A237E; /* NCC Navy Accent */
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__Heading i {
+  color: #1A237E; /* Icon Navy */
+  font-size: 1.8rem;
+}
+
+/* 🌟 PARAGRAPH STYLING */
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+.highlight {
+  color: #B22222;
+  font-weight: 600;
+}
+
+/* 🌟 TIMELINE DESIGN */
+.timeline {
+  position: relative;
+  padding-left: 25px;
+  border-left: 4px solid #B22222;
+  margin-bottom: 40px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #1A237E;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.timeline-date {
+  font-weight: bold;
+  color: #B22222;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* 🌟 GRID LAYOUTS */
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+.col-1-of-2 {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* 🌟 STYLED LISTS */
+.styled-list {
+  list-style: none;
+  padding: 0;
+}
+.styled-list li {
+  margin-bottom: 10px;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1rem;
+}
+.styled-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1A237E;
+  font-weight: bold;
+}
+
+/* 🌟 CARD CONTENT BOXES */
+.card__content {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border-left: 5px solid #B22222;
+  transition: transform 0.3s ease;
+}
+.card__content:hover {
+  transform: translateY(-5px);
+}
+
+/* 🌟 IMAGE WITH CAPTION */
+.image__text {
+  text-align: center;
+}
+.image__text--img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.image__text--text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  font-style: italic;
+}
+
+/* 🌟 PLEDGE BOX */
+.pledge-box {
+  background: linear-gradient(135deg, #B22222 0%, #1A237E 100%);
+  color: white;
+  padding: 35px;
+  border-radius: 12px;
+  margin: 40px 0;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.pledge {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* 🌟 SONG LYRICS BOX */
+.lyrics-box {
+  background: #f7f9fc;
+  padding: 20px;
+  border: 2px dashed #1A237E;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+/* 🌟 ANIMATIONS */
+.about__container {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+.about__container:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+.about__container:nth-child(even) {
+  animation-delay: 0.4s;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* 🌟 RESPONSIVE */
+@media (max-width: 768px) {
+  .main__Heading {
+    font-size: 1.6rem;
+  }
+  .pledge {
+    font-size: 1.1rem;
+  }
+}
+
+  .paragraph {
+  font-size: 1.35rem;   /* Bigger for clear readability */
+  line-height: 2;       /* Comfortable spacing */
+  color: #2b2b2b;       /* Deep dark grey for clarity */
+  font-weight: 400;     /* Smooth weight (not too bold) */
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 1200px) {
+  .paragraph {
+    font-size: 1.45rem; /* Even larger on big screens */
+  }
+}
   .about__container {
     width: 75vw;
     padding: 2rem;
